@@ -31,34 +31,40 @@ abilities:
    # Placeholder: Boss' name - %boss%
    name: '%boss%''s Minion'
   arrow-rain:
-   size: 5 # How far around the boss should arrows spawn?
-   altitude: 3 # How high above the boss should arrows spawn?
-   speed: 1.0 # How fast should arrows fall?
-   damage: 1.0 # How much damage should each arrow do?
-   tipped:
-    enabled: false # Should arrows be tipped?
-    effect: POISON # Potion Effect or RANDOM - https://helpch.at/docs/1.20.3/org/bukkit/potion/PotionEffectType.html
+   size: 7 # How far around the boss should arrows spawn?
+   altitude: 7 # How high above the boss should arrows spawn?
+   speed: 0.3 # How fast should arrows fall?
   barrage-all:
-   count: 5 # How many arrows are fired?
-   damage: 1.0 # How much damage should each arrow do?
+   count: 7 # How many arrows are fired?
    speed: 1.0 # How fast should arrows travel?
-   delay: 4 # How much delay between each arrow? (In ticks, 20 ticks = 1 second)
+   delay: 2 # How much delay between each arrow? (In ticks, 20 ticks = 1 second)
   barrage-nearby:
-   count: 5 # How many arrows are fired?
-   damage: 1.0 # How much damage should each arrow do?
+   count: 7 # How many arrows are fired?
    speed: 1.0 # How fast should arrows travel?
-   delay: 4 # How much delay between each arrow? (In ticks, 20 ticks = 1 second)
+   delay: 2 # How much delay between each arrow? (In ticks, 20 ticks = 1 second)
    radius: 3 # How close players must be to be affected by the ability. 
   barrage-random:
-   count: 5 # How many arrows are fired?
-   damage: 1.0 # How much damage should each arrow do?
+   count: 7 # How many arrows are fired?
    speed: 1.0 # How fast should arrows travel?
-   delay: 4 # How much delay between each arrow? (In ticks, 20 ticks = 1 second)
+   delay: 2 # How much delay between each arrow? (In ticks, 20 ticks = 1 second)
   barrage-target:
-   count: 5 # How many arrows are fired?
-   damage: 1.0 # How much damage should each arrow do?
+   count: 7 # How many arrows are fired?
    speed: 1.0 # How fast should arrows travel?
-   delay: 4 # How much delay between each arrow? (In ticks, 20 ticks = 1 second)
+   delay: 2 # How much delay between each arrow? (In ticks, 20 ticks = 1 second)
+  potion-rain:
+   size: 5 # How far around the boss should potions spawn?
+   altitude: 7 # How high above the boss should potions spawn?
+   speed: 0.3 # How fast should potions fall?
+   effect: POISON # Potion Effect or RANDOM - https://helpch.at/docs/1.20.3/org/bukkit/potion/PotionEffectType.html
+   duration: 60 # How long should the potion effect last? (In ticks, 20 ticks = 1 second)
+   level: 1 # What level of the effect should be used?
+  potion-rain-lingering:
+   size: 5 # How far around the boss should potions spawn?
+   altitude: 7 # How high above the boss should potions spawn?
+   speed: 0.3 # How fast should potions fall?
+   effect: POISON # Potion Effect or RANDOM - https://helpch.at/docs/1.20.3/org/bukkit/potion/PotionEffectType.html
+   duration: 60 # How long should the potion effect last? (In ticks, 20 ticks = 1 second)
+   level: 1 # What level of the effect should be used?
  ############################################################
  # |                 MobArena Abilities                   | #
  ############################################################

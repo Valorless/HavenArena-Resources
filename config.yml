@@ -26,6 +26,7 @@ titles-timing:
   fade-out: 20 # Default 20
   stay: 40 # Default 40
  onNewWave:
+  delay: 0
   fade-in: 10 # Default 10
   fade-out: 20 # Default 20
   stay: 40 # Default 40
@@ -82,7 +83,7 @@ heal:
 # teleporting out when the arena ends.
 teleport-on-end: false
 
-# Clear weapon enchants on mobs, when playing on Hard?
+# Clear weapon enchants on mobs?
 clear-enchants: false
 
 # Multiply mob count of SPECIAL waves. 

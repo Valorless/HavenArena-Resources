@@ -65,3 +65,10 @@ mobs-left: '&e%mobs% Monsters left.'
 
 # Chat message sent when the player tries to ready up, as a class they dont have permission to.
 class-permission: '&cYou cannot use this class!'
+
+class-preview:
+ ## Placeholders ##
+ # %class% - Their class.
+ gui-title: 'Previewing: %class%'
+ class-unknown: 'Unknown class.'
+ no-permission: 'No permission.'
