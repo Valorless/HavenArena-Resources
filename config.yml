@@ -1,0 +1,123 @@
+############################################################
+# +------------------------------------------------------+ #
+# |                       Config                         | #
+# +------------------------------------------------------+ #
+############################################################
+
+# Additional messages used for debugging.
+debug: false
+
+# Which titles should we show the player?
+# REQUIRES MobArena announcer-type config not set to "title", try "chat" instead.
+titles:
+ onStart: true
+ onNewWave: true
+ onPlayerDeath: true
+ onUpgrade: true
+ onSupply: true
+ onEnd: true
+ onComplete: true
+
+# Titles Timings
+titles-timing:
+ # Time in ticks. (20 ticks = 1 second)
+ onStart:
+  fade-in: 10 # Default 10
+  fade-out: 20 # Default 20
+  stay: 40 # Default 40
+ onNewWave:
+  fade-in: 10 # Default 10
+  fade-out: 20 # Default 20
+  stay: 40 # Default 40
+ onPlayerDeath:
+  fade-in: 10 # Default 10
+  fade-out: 20 # Default 20
+  stay: 40 # Default 40
+ onUpgrade:
+  fade-in: 10 # Default 10
+  fade-out: 20 # Default 20
+  stay: 40 # Default 40
+ onSupply:
+  fade-in: 10 # Default 10
+  fade-out: 20 # Default 20
+  stay: 40 # Default 40
+ onEnd:
+  fade-in: 10 # Default 10
+  fade-out: 20 # Default 20
+  stay: 40 # Default 40
+ onComplete:
+  fade-in: 10 # Default 10
+  fade-out: 20 # Default 20
+  stay: 40 # Default 40
+
+# How many ticks until the boss can be hit again?
+# The lower the number, the better for more players.
+# 20 is Minecraft default.
+# Cannot go below 1.
+## Placeholders ##
+# %players% - Players in the arena.
+boss-iframes: 
+ enabled: true
+ formula: '20 - (%players% * 3)'
+ 
+# How many enemies should be left before we add glow to them?
+# -1 to disable.
+glow: 7
+
+# At how many mobs should we announce in chat how many are left?
+# -1 to disable.
+mobs-left: 10
+# Should the message show on the actionbar instead of the chat?
+mobs-left-actionbar: false
+
+# Show how many players aren't ready.
+ready-missing: true
+
+# Should we heal players at the start of waves or bosses?
+heal:
+ wave: false
+ boss: false
+ 
+# Enable this setting if players are having trouble
+# teleporting out when the arena ends.
+teleport-on-end: false
+
+# Clear weapon enchants on mobs, when playing on Hard?
+clear-enchants: false
+
+# Multiply mob count of SPECIAL waves. 
+# If the wave spawns 4 mobs, it'll be (4 * Formula value).
+# Can also simply be "2", if you want double the mobs.
+## Placeholders ##
+# %wave% - Wave number.
+# %players% - Players in the arena.
+special-multiplier:
+ enabled: true
+ formula: '(%players% + 1) * 0.5 + (%wave% * 0.1)'
+ 
+# Permission required to ready up as that specific class.
+# Allows player to preview the class kit, but cannot ready up as it.
+# CaPs SeNsItIvE :D
+class-permissions:
+ Knight: mobarena.knight
+ Tank: mobarena.tank
+ Archer: mobarena.archer
+ Chemist: mobarena.chemist
+ Oddjob: mobarena.oddjob
+ 
+# Permission required to preview that specific class with "/ha preview"
+# Opens a gui inventory with the class' kit.
+# Any class not on this list, cannot be previewed.
+# CaPs SeNsItIvE :D
+preview-permissions:
+ Knight: mobarena.preview.knight
+ Tank: mobarena.preview.tank
+ Archer: mobarena.preview.archer
+ Chemist: mobarena.preview.chemist
+ Oddjob: mobarena.preview.oddjob
+ 
+# Custom boss abilities.
+# You have restart MobArena or the server to load the
+# abilities into MobArena.
+boss-abilities:
+ enabled: false

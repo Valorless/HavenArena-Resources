@@ -1,0 +1,25 @@
+name: HavenArena
+main: valorless.havenarena.Main
+version: version-number
+author: Valorless
+api-version: 1.18
+depend: [ValorlessUtils, MobArena]
+soft-depend: [PlaceholderAPI]
+commands:
+  havenarena:
+    description: Main command.
+    usage:
+    aliases: [ha]
+permissions:
+  havenarena.*:
+    description: Gives access to all HavenArena commands.
+    children:
+      havenarena.reload: true
+      havenarena.preview: true
+  havenarena.reload:
+    description: Allows you to reload the configuration.
+    default: op
+  havenarena.preview:
+    description: Allows you to reload the configuration.
+    default: op
+  

@@ -1,0 +1,67 @@
+############################################################
+# +------------------------------------------------------+ #
+# |                         Lang                         | #
+# +------------------------------------------------------+ #
+############################################################
+
+# Plugin prefix, only used for ´/ha reload´ at the moment.
+prefix: '&7[&aHaven&bArena&7] '
+
+# Title shown on arena Start. 
+on-start: '&eLet the slaugther begin!'
+on-start-sub: '&fGood luck'
+on-start-sound: 'BLOCK_NOTE_BLOCK_BELL'
+
+# Title shown on waves. 
+## Placeholders ##
+# %wave% - Wave number.
+on-wave: '&eWave &c%wave%'
+on-wave-sub: ''
+on-wave-sound: 'BLOCK_NOTE_BLOCK_BELL'
+
+# Title shown on boss waves. 
+## Placeholders ##
+# %boss% - Boss' name.
+on-boss: '&eBoss'
+on-boss-sub: '&c%boss%'
+on-boss-sound: 'BLOCK_NOTE_BLOCK_BELL'
+
+# Title shown on player death. 
+## Placeholders ##
+# %player% - Player that died.
+# %class% - Their class.
+on-death: '&e%player% &cdied!'
+on-death-sub: '&f%class%'
+on-death-sound: 'BLOCK_NOTE_BLOCK_BELL'
+
+# Title shown on supply wave. 
+## Placeholders ##
+# %wave% - Wave number.
+on-supply: '&fSupplies!'
+on-supply-sub: '&eWave &c%wave%'
+on-supply-sound: 'BLOCK_NOTE_BLOCK_BELL'
+
+# Title shown on upgrade wave. 
+## Placeholders ##
+# %wave% - Wave number.
+on-upgrade: '&fUpgrades!'
+on-upgrade-sub: '&eWave &c%wave%'
+on-upgrade-sound: 'BLOCK_NOTE_BLOCK_BELL'
+
+# Title shown on arena End. 
+on-end: '&cBetter luck next time.'
+on-end-sub: ''
+on-end-sound: 'BLOCK_NOTE_BLOCK_BELL'
+
+# Title shown on arena Complete. 
+on-complete: '&aVictory!'
+on-complete-sub: ''
+on-complete-sound: 'BLOCK_NOTE_BLOCK_BELL'
+
+# Chat message sent when less than a certain amount of mobs remain.
+## Placeholders ##
+# %mobs% - Amount of mobs left.
+mobs-left: '&e%mobs% Monsters left.'
+
+# Chat message sent when the player tries to ready up, as a class they dont have permission to.
+class-permission: '&cYou cannot use this class!'

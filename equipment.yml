@@ -1,0 +1,52 @@
+############################################################
+# +------------------------------------------------------+ #
+# |                      Equipment                       | #
+# +------------------------------------------------------+ #
+############################################################
+#
+### Under Development - Subject to change/removal.
+#
+## Any equipment defined will be applied to all monsters in the wave.
+## Do note: Not all monsters have their equipment visible, such as spiders.
+#
+# Items can be defined by Material (i.e IRON_SWORD), or with an exported item.
+# (Export items for use with '/ha export')
+
+arenas:
+ # Arena name, as specified in the MobArena config file.
+ Arena1:
+  waves:
+   # always name w + wave number. i.e 'w50'.
+   w50:
+    # Main Hand
+    main: IRON_SWORD
+    # Off-hand
+    off: IRON_SWORD
+    # Helmet
+    head: AIR # set AIR or remove to ignore.
+    # Chestplate
+    chest: AIR
+    # Leggings
+    legs: AIR
+    # Boots
+    feet: AIR
+ Arena2:
+  waves:
+   # always name w + wave number. i.e 'w50'.
+   w10:
+    # Main Hand
+    main: DIRT
+    # Off-hand
+    off: AIR
+    # Helmet
+    head: AIR # set AIR or remove to ignore.
+    # Chestplate
+    chest: AIR
+    # Leggings
+    legs: AIR
+    # Boots
+    feet: AIR
+    
+    
+   
+

@@ -1,0 +1,121 @@
+############################################################
+# +------------------------------------------------------+ #
+# |                   Boss Abilities                     | #
+# +------------------------------------------------------+ #
+############################################################
+# 
+#   Settings for regular and custom MobArena boss abilities.
+#   To apply settings, you may have to reload both HavenArena and MobArena,
+#   Don't forget to enable the abilities in config.yml.
+
+abilities:
+ ############################################################
+ # |                  Custom Abilities                    | #
+ ############################################################
+ custom:
+  knockup-all:
+   power: 1.2 # How much should power should we knock players up with?
+  knockup-nearby:
+   power: 1.2 # How much should power should we knock players up with?
+   radius: 5 # How close players must be to be affected by the ability.
+  knockup-random:
+   power: 1.2 # How much should power should we knock players up with?
+  knockup-target:
+   power: 1.2 # How much should power should we knock players up with?
+  shuffle-hotbar:
+   random: false # Should we choose a random player, or choose all?
+  minions:
+   # Minions don't despawn when the boss dies.
+   amount: 4 # How many minions should we spawn?
+   radius: 1.0 # How far from the boss should we spawn the minions?
+   # Placeholder: Boss' name - %boss%
+   name: '%boss%''s Minion'
+  arrow-rain:
+   size: 5 # How far around the boss should arrows spawn?
+   altitude: 3 # How high above the boss should arrows spawn?
+   speed: 1.0 # How fast should arrows fall?
+   damage: 1.0 # How much damage should each arrow do?
+   tipped:
+    enabled: false # Should arrows be tipped?
+    effect: POISON # Potion Effect or RANDOM - https://helpch.at/docs/1.20.3/org/bukkit/potion/PotionEffectType.html
+  barrage-all:
+   count: 5 # How many arrows are fired?
+   damage: 1.0 # How much damage should each arrow do?
+   speed: 1.0 # How fast should arrows travel?
+   delay: 4 # How much delay between each arrow? (In ticks, 20 ticks = 1 second)
+  barrage-nearby:
+   count: 5 # How many arrows are fired?
+   damage: 1.0 # How much damage should each arrow do?
+   speed: 1.0 # How fast should arrows travel?
+   delay: 4 # How much delay between each arrow? (In ticks, 20 ticks = 1 second)
+   radius: 3 # How close players must be to be affected by the ability. 
+  barrage-random:
+   count: 5 # How many arrows are fired?
+   damage: 1.0 # How much damage should each arrow do?
+   speed: 1.0 # How fast should arrows travel?
+   delay: 4 # How much delay between each arrow? (In ticks, 20 ticks = 1 second)
+  barrage-target:
+   count: 5 # How many arrows are fired?
+   damage: 1.0 # How much damage should each arrow do?
+   speed: 1.0 # How fast should arrows travel?
+   delay: 4 # How much delay between each arrow? (In ticks, 20 ticks = 1 second)
+ ############################################################
+ # |                 MobArena Abilities                   | #
+ ############################################################
+ #
+ #   These settings work by overriding the original MobArena abilitites
+ #   with a slightly changed version.
+ #   You must enable these abilities in config.yml, or else the settings won't work.
+ #
+ mobarena:
+  chain-lightning:
+   radius: 4 # How many blocks the chain lightning can spread over.
+   ticks: 10 # How many server ticks between each lightning strike.
+  disorient-distant:
+   radius: 8 # How far away players must be to be affected by the ability.
+  disorient-nearby:
+   radius: 5 # How close players must be to be affected by the ability.
+  disorient-target:
+   random: false # If the boss has no target, should a random player be selected?
+  fetch-distant:
+   radius: 8 # How far away players must be to be affected by the ability.
+  fetch-nearby:
+   radius: 5 # How close players must be to be affected by the ability.
+  fetch-target:
+   random: false # If the boss has no target, should a random player be selected?
+  fire-aura:
+   radius: 5 # How close players must be to be affected by the ability.
+   ticks: 20 # How many ticks the players should be on fire for.
+  lightning-aura:
+   radius: 5 # How close players must be to be affected by the ability.
+  living-bomb:
+   fuse: 60 # How many ticks before the bomb goes off.
+   radius: 3 # How close players must be to be affected by the bomb.
+   afterburn: 40 # How many ticks players affected by the bomb should burn.
+  obsidian-bomb:
+   fuse: 80 # How many ticks before the bomb goes off.
+  pull-distant:
+   radius: 8 # How far away players must be to be affected by the ability.
+  pull-nearby:
+   radius: 5 # How close players must be to be affected by the ability.
+  pull-target:
+   random: false # If the boss has no target, should a random player be selected?
+  root-target:
+   duration: 30 # How long the the potions last (in ticks).
+   amplifier: 100 # The amplifier for the potions.
+  throw-all:
+   power: 0.8 # How hard should we throw players?
+  throw-distant:
+   power: 0.8 # How hard should we throw players?
+   radius: 8 # How far away players must be to be affected by the ability.
+  throw-nearby:
+   power: 0.8 # How hard should we throw players?
+   radius: 5 # How close players must be to be affected by the ability.
+  throw-target:
+   power: 0.8 # How hard should we throw players?
+   random: false # If the boss has no target, should a random player be selected?
+   
+   
+   
+   
+   
