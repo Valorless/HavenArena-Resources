@@ -1,0 +1,59 @@
+############################################################
+# +------------------------------------------------------+ #
+# |                   Arena Advancing                    | #
+# +------------------------------------------------------+ #
+############################################################
+#
+# Here we'll define specific waves for specific arenas, 
+# where the players will be teleported to another section of the arena.
+#
+# Careful not to have MobArena's config setting "spawnpoint-max-distance" set too high,
+# Otherwise mob can spawn away from the advancing point, possibly soft-locking the arena.
+#
+
+arenas:
+ # Arena name, as defined in MobArena's config.
+ CoolArenaName:
+  # Entry names can be whatever you want.
+  EntryOne:
+   wave: 35
+   spawnpoints:
+    players:
+     # Where we want players to teleport to.
+     target:
+      # The center of blocks are .5
+      x: 100.5
+      y: 65
+      z: 326.5
+     # If offset is 0, all players spawn directly on the target.
+     # If offset is 2, all players spawn within 2 blocks around the target.
+     # Offset only affects x/y.
+     offset: 2
+    spectators:
+     # Where we want spectators to teleport to.
+     target:
+      # The center of blocks are .5
+      x: 100.5
+      y: 75
+      z: 326.5
+     # If offset is 0, all players spawn directly on the target.
+     # If offset is 2, all players spawn within 2 blocks around the target.
+     # Offset only affects x/y.
+     offset: 2
+  # Entry example with comments stripped.
+  EntryTwoStripped:
+   wave: 35
+   spawnpoints:
+    players:
+     target:
+      x: 100.5
+      y: 65
+      z: 326.5
+     offset: 2
+    spectators:
+     target:
+      x: 100.5
+      y: 75
+      z: 326.5
+     offset: 2
+    

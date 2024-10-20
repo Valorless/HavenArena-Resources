@@ -15,8 +15,20 @@ titles:
  onPlayerDeath: true
  onUpgrade: true
  onSupply: true
+ onSwarm: true
+ onSpecial: true
  onEnd: true
  onComplete: true
+ onBossAbility: true
+ 
+# Settings for the onBossAbility title.
+# Requires the setting "boss-abilities" to be enabled.
+onBossAbility:
+ # Should we disable the title for specific bosses?
+ # Such as those with a low ability interval.
+ disabled-for:
+  boss1: false
+  boss2: true
 
 # Titles Timings
 titles-timing:
@@ -30,7 +42,15 @@ titles-timing:
   fade-in: 10 # Default 10
   fade-out: 20 # Default 20
   stay: 40 # Default 40
- onPlayerDeath:
+ onBoss:
+  fade-in: 10 # Default 10
+  fade-out: 20 # Default 20
+  stay: 40 # Default 40
+ onSwarm:
+  fade-in: 10 # Default 10
+  fade-out: 20 # Default 20
+  stay: 40 # Default 40
+ onSpecial:
   fade-in: 10 # Default 10
   fade-out: 20 # Default 20
   stay: 40 # Default 40
@@ -42,11 +62,19 @@ titles-timing:
   fade-in: 10 # Default 10
   fade-out: 20 # Default 20
   stay: 40 # Default 40
+ onPlayerDeath:
+  fade-in: 10 # Default 10
+  fade-out: 20 # Default 20
+  stay: 40 # Default 40
  onEnd:
   fade-in: 10 # Default 10
   fade-out: 20 # Default 20
   stay: 40 # Default 40
  onComplete:
+  fade-in: 10 # Default 10
+  fade-out: 20 # Default 20
+  stay: 40 # Default 40
+ onBossAbility:
   fade-in: 10 # Default 10
   fade-out: 20 # Default 20
   stay: 40 # Default 40
@@ -60,6 +88,8 @@ titles-timing:
 boss-iframes: 
  enabled: true
  formula: '20 - (%players% * 3)'
+ min: 5
+ max: 20
  
 # How many enemies should be left before we add glow to them?
 # -1 to disable.
@@ -71,20 +101,25 @@ mobs-left: 10
 # Should the message show on the actionbar instead of the chat?
 mobs-left-actionbar: false
 
-# Show how many players aren't ready.
-ready-missing: true
-
 # Should we heal players at the start of waves or bosses?
 heal:
  wave: false
  boss: false
- 
-# Enable this setting if players are having trouble
-# teleporting out when the arena ends.
-teleport-on-end: false
 
 # Clear weapon enchants on mobs?
 clear-enchants: false
+
+# Show how many players arent ready?
+ready-missing: true
+
+# Should we use a custom block for ready/unready?
+# We can't unready with the default MobArena functions,
+# so we'll create our own.
+custom-ready-block:
+ enabled: false
+ # Block material - https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html
+ # Don't use IRON_BLOCK, as MobArena uses those.
+ material: GOLD_BLOCK
 
 # Multiply mob count of SPECIAL waves. 
 # If the wave spawns 4 mobs, it'll be (4 * Formula value).

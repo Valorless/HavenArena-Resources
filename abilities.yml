@@ -30,6 +30,17 @@ abilities:
    radius: 1.0 # How far from the boss should we spawn the minions?
    # Placeholder: Boss' name - %boss%
    name: '%boss%''s Minion'
+   custom:
+    boss1: 
+     name: 'Spawn of %boss%'
+     type: ZOMBIE # https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity/EntityType.html
+     health: 20 # 2 = 1 heart
+  minions-sacrifice:
+   heal: 4 # How much the boss is healed per minion. 2 = 1 heart
+  minions-explode:
+   damage: 10.0 # How much damage should the explosion deal? (Does not drop-off with distance)
+   power: 2.0 # The power of explosion, where 4 is equivalent to TNT.
+   radius: 2.0 # Range of the explosion
   arrow-rain:
    size: 7 # How far around the boss should arrows spawn?
    altitude: 7 # How high above the boss should arrows spawn?

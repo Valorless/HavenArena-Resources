@@ -13,11 +13,9 @@ on-start-sub: '&fGood luck'
 on-start-sound: 'BLOCK_NOTE_BLOCK_BELL'
 
 # Title shown on waves. 
-## Placeholders ##
-# %wave% - Wave number.
 on-wave: '&eWave &c%wave%'
 on-wave-sub: ''
-on-wave-sound: 'BLOCK_NOTE_BLOCK_BELL'
+on-wave-sound: BLOCK_NOTE_BLOCK_BELL
 
 # Title shown on boss waves. 
 ## Placeholders ##
@@ -26,6 +24,34 @@ on-boss: '&eBoss'
 on-boss-sub: '&c%boss%'
 on-boss-sound: 'BLOCK_NOTE_BLOCK_BELL'
 
+# Title shown on swarm waves. 
+## Placeholders ##
+# %wave% - Wave number.
+on-swarm: '&eWave &c%wave%'
+on-swarm-sub: ''
+on-swarm-sound: 'BLOCK_NOTE_BLOCK_BELL'
+
+# Title shown on special waves. 
+## Placeholders ##
+# %wave% - Wave number.
+on-special: '&eWave &c%wave%'
+on-special-sub: ''
+on-special-sound: 'BLOCK_NOTE_BLOCK_BELL'
+
+# Title shown on supply waves. 
+## Placeholders ##
+# %wave% - Wave number.
+on-supply: '&fSupplies!'
+on-supply-sub: '&eWave &c%wave%'
+on-supply-sound: 'BLOCK_NOTE_BLOCK_BELL'
+
+# Title shown on upgrade waves. 
+## Placeholders ##
+# %wave% - Wave number.
+on-upgrade: '&fUpgrades!'
+on-upgrade-sub: '&eWave &c%wave%'
+on-upgrade-sound: 'BLOCK_NOTE_BLOCK_BELL'
+
 # Title shown on player death. 
 ## Placeholders ##
 # %player% - Player that died.
@@ -33,20 +59,6 @@ on-boss-sound: 'BLOCK_NOTE_BLOCK_BELL'
 on-death: '&e%player% &cdied!'
 on-death-sub: '&f%class%'
 on-death-sound: 'BLOCK_NOTE_BLOCK_BELL'
-
-# Title shown on supply wave. 
-## Placeholders ##
-# %wave% - Wave number.
-on-supply: '&fSupplies!'
-on-supply-sub: '&eWave &c%wave%'
-on-supply-sound: 'BLOCK_NOTE_BLOCK_BELL'
-
-# Title shown on upgrade wave. 
-## Placeholders ##
-# %wave% - Wave number.
-on-upgrade: '&fUpgrades!'
-on-upgrade-sub: '&eWave &c%wave%'
-on-upgrade-sound: 'BLOCK_NOTE_BLOCK_BELL'
 
 # Title shown on arena End. 
 on-end: '&cBetter luck next time.'
@@ -58,10 +70,44 @@ on-complete: '&aVictory!'
 on-complete-sub: ''
 on-complete-sound: 'BLOCK_NOTE_BLOCK_BELL'
 
+# Title shown on boss abilities. 
+## Placeholders ##
+# %ability% - Name of the ability.
+on-boss-ability: ''
+on-boss-ability-sub: '&c%ability%'
+on-boss-ability-sound: 'BLOCK_NOTE_BLOCK_BELL'
+
+# Class specific colors for the %class% placeholder.
+# CaPs SeNsItIvE :D
+class-colors:
+ Knight: '&e'
+ Tank: '&b'
+ Archer: '&a'
+ Chemist: '&d'
+ Oddjob: '&c'
+
 # Chat message sent when less than a certain amount of mobs remain.
 ## Placeholders ##
 # %mobs% - Amount of mobs left.
 mobs-left: '&e%mobs% Monsters left.'
+
+# Chat messages when a player readys up.
+# Used in combo with custom-ready-block.
+ready: '&aYou have been flagged as ready!'
+unready: '&eYou have been flagged as unready!'
+
+# Actionbar message when readying up.
+# # Placeholders ##
+# %missing% - Amount of players not ready.
+ready-missing: '&c%missing% players aren''t ready.'
+
+# Actionbar message when readying up, and only 1 player is missing.
+# # Placeholders ##
+# %missing% - Player's name.
+ready-missing-last: '&c%missing% isn''t ready.'
+
+# instert comment here
+advanced: 'Teleported to a new part of the arena!'
 
 # Chat message sent when the player tries to ready up, as a class they dont have permission to.
 class-permission: '&cYou cannot use this class!'

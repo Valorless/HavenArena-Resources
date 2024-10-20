@@ -1,0 +1,25 @@
+############################################################
+# +------------------------------------------------------+ #
+# |             PlaceholderAPI Placeholders              | #
+# +------------------------------------------------------+ #
+############################################################
+
+# %havenarena_status_ARENA%
+status:
+ active: '&eIn Progress'
+ inactive: '&aReady'
+ 
+# %havenarena_progress_ARENA%
+# Placeholders:
+# %wave% - Current Wave
+# %max-wave% - Final Wave
+progress:
+ text: '&fWave %wave% / %max-wave%'
+ hide-inactive: true
+ 
+# %havenarena_players_ARENA%
+# Placeholders:
+# %players% - Player Count
+players: '&f%players% players'
+
+
