@@ -23,7 +23,7 @@ arenas:
      target:
       # The center of blocks are .5
       x: 100.5
-      y: 65
+      y: 65.0
       z: 326.5
      # If offset is 0, all players spawn directly on the target.
      # If offset is 2, all players spawn within 2 blocks around the target.
@@ -34,7 +34,7 @@ arenas:
      target:
       # The center of blocks are .5
       x: 100.5
-      y: 75
+      y: 75.0
       z: 326.5
      # If offset is 0, all players spawn directly on the target.
      # If offset is 2, all players spawn within 2 blocks around the target.
@@ -47,13 +47,13 @@ arenas:
     players:
      target:
       x: 100.5
-      y: 65
+      y: 65.0
       z: 326.5
      offset: 2
     spectators:
      target:
       x: 100.5
-      y: 75
+      y: 75.0
       z: 326.5
      offset: 2
     
