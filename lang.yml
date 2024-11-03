@@ -106,7 +106,7 @@ ready-missing: '&c%missing% players aren''t ready.'
 # %missing% - Player's name.
 ready-missing-last: '&c%missing% isn''t ready.'
 
-# instert comment here
+# Message sent when advancing the arena.
 advanced: 'Teleported to a new part of the arena!'
 
 # Chat message sent when the player tries to ready up, as a class they dont have permission to.
