@@ -76,6 +76,76 @@ abilities:
    effect: POISON # Potion Effect or RANDOM - https://helpch.at/docs/1.20.3/org/bukkit/potion/PotionEffectType.html
    duration: 60 # How long should the potion effect last? (In ticks, 20 ticks = 1 second)
    level: 1 # What level of the effect should be used?
+  poison-all:
+   duration: 60 # How long should the potion effect last? (In ticks, 20 ticks = 1 second)
+   level: 1 # What level of the effect should be used?
+  poison-nearby:
+   duration: 60 # How long should the potion effect last? (In ticks, 20 ticks = 1 second)
+   level: 1 # What level of the effect should be used?
+   radius: 4 # How close players must be to be affected by the ability. 
+  poison-target:
+   duration: 60 # How long should the potion effect last? (In ticks, 20 ticks = 1 second)
+   level: 1 # What level of the effect should be used?
+  wither-all:
+   duration: 60 # How long should the potion effect last? (In ticks, 20 ticks = 1 second)
+   level: 1 # What level of the effect should be used?
+  wither-nearby:
+   duration: 60 # How long should the potion effect last? (In ticks, 20 ticks = 1 second)
+   level: 1 # What level of the effect should be used?
+   radius: 4 # How close players must be to be affected by the ability. 
+  wither-target:
+   duration: 60 # How long should the potion effect last? (In ticks, 20 ticks = 1 second)
+   level: 1 # What level of the effect should be used?
+  slow-all:
+   duration: 60 # How long should the potion effect last? (In ticks, 20 ticks = 1 second)
+   level: 1 # What level of the effect should be used?
+  slow-nearby:
+   duration: 60 # How long should the potion effect last? (In ticks, 20 ticks = 1 second)
+   level: 1 # What level of the effect should be used?
+   radius: 4 # How close players must be to be affected by the ability. 
+  slow-target:
+   duration: 60 # How long should the potion effect last? (In ticks, 20 ticks = 1 second)
+   level: 1 # What level of the effect should be used?
+  blind-all:
+   duration: 60 # How long should the potion effect last? (In ticks, 20 ticks = 1 second)
+   level: 1 # What level of the effect should be used?
+  blind-nearby:
+   duration: 60 # How long should the potion effect last? (In ticks, 20 ticks = 1 second)
+   level: 1 # What level of the effect should be used?
+   radius: 4 # How close players must be to be affected by the ability. 
+  blind-target:
+   duration: 60 # How long should the potion effect last? (In ticks, 20 ticks = 1 second)
+   level: 1 # What level of the effect should be used?
+  gravity-shift:
+   duration: 100 # How long should the effect last? (In ticks, 20 ticks = 1 second)
+   level: 1 # What level of the effect should be used?
+  leap-target:
+   angle: 25.0 # What angle should the boss leap?
+   force: 1.9 # How much force should the boss leap?
+  leap-distant:
+   angle: 25.0 # What angle should the boss leap?
+   force: 1.9 # How much force should the boss leap?
+   radius: 8 # How far away players must be to be affected by the ability.
+  vampiric-aura:
+   radius: 5 # How close players must be to be affected by the ability.
+   health: 3 # How much health should we siphon from the players hit? (2 = 1 heart)
+  raging-winds:
+   force: 0.3 # How much force should we push players with?
+   radius: -1 # How close players must be to be affected by the ability. (-1 = Unlimited range)
+   duration: 60 # How long should the effect last? (In ticks, 20 ticks = 1 second)
+   grounded-only: false # Should we only push grounded players?
+  illusions:
+   clones: 3 # How many clones should we spawn?
+   duration: 140 # How long should the clones last? (In ticks, 20 ticks = 1 second)
+  healing-prism:
+   heal: 2 # How much health should it heal the boss? (2 = 1 heart)
+   interval: 20 # How often should the prism heal the boss? (In ticks, 20 ticks = 1 second)
+   duration: 200 # How long should the clones last? (In ticks, 20 ticks = 1 second)
+   range: 6.0 # How far can the prism reach the boss?
+   show-range: true # Should we show a visual range?
+   show-range-particles: 50 # How many particles should be use?
+   name: 'Healing Prism' # Should we shuffle the positions of the boss and clones?
+   players: false # Should we also heal players?
  ############################################################
  # |                 MobArena Abilities                   | #
  ############################################################

@@ -42,7 +42,7 @@ arenas:
      offset: 2
   # Entry example with comments stripped.
   EntryTwoStripped:
-   wave: 35
+   wave: 35,36,42
    spawnpoints:
     players:
      target:
